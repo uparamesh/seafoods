@@ -1,0 +1,33 @@
+<section id="cart_items">
+	<div class="container">
+		<div class="review-payment">
+			<h4>Categories</h4>
+		</div>
+		<div class="table-responsive cart_info">
+			<table class="table table-condensed">
+				<thead>
+					<tr class="cart_menu">
+						<td class="id">Cat.. Id</td>
+						<td class="name">Name</td>
+						<td class="actions">Actions</td>
+					</tr>
+				</thead>
+				<tbody>
+					<% @categories.each do |cat| %>
+						<tr>
+							<td class="cart_description">
+								<p><%= cat.id %></p>
+							</td>
+							<td class="cart_price">
+								<p><%= cat.title.capitalize %></p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+					<% end %>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</section>
