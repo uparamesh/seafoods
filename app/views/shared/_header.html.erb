@@ -1,21 +1,19 @@
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="brand" href="#">Project name</a>
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-      <div class="nav-collapse collapse">
-        <ul class="nav pull-right">
-          <li class="active">
-            <a href="#">Home</a>
-          </li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-        </ul>
+<div class="header-middle"><!--header-middle-->
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-4">
+              <div class="logo pull-left">
+                <%= link_to image_tag("logo2.png"), root_path %>
+              </div>
+          </div>
+          <div class="col-sm-8">
+              <div class="shop-menu pull-right">
+                  <ul class="nav navbar-nav">
+                      <li><i class="fa fa-user"><%= link_to "Signup", new_user_registration_path %></i></li>
+                      <li><i class="fa fa-lock"><%= link_to "Login", new_user_session_path %></i></li>
+                  </ul>
+              </div>
+          </div>
       </div>
-    </div>
   </div>
-</div>
+</div><!--/header-middle-->
